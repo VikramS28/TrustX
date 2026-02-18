@@ -1,0 +1,27 @@
+{% extends "Home.html" %}
+{% block content%}
+<br/><br/>
+<div class="account-type-container">
+    <div class="account-type-content">
+        <div class="account-type-form">
+            <div class="logo">Trust<span>X</span></div>
+            <h2>Select account type</h2>
+            <p class="subheading">Don't worry, this can be changed later.</p>
+            <div class="account-type-options">
+                <nav><a href="/dashboard"><button class="account-type-btn" id="freelancerBtn">
+                    <div class="account-type-icon">💻</div>
+                    <span>I want to work</span>
+                    <div class="account-type-arrow">➔</div>
+                </button></a>
+                <br>
+                <a href="/hire"><button class="account-type-btn" id="clientBtn">
+                    <div class="account-type-icon">👥</div>
+                    <span>I want to hire</span>
+                    <div class="account-type-arrow">➔</div>
+                </button></a></nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

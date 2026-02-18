@@ -1,0 +1,72 @@
+{% extends "Home.html" %}
+{% block head %}
+<header>
+    <div class="container">
+        <div class="header-content">
+            <nav><a href="/"><div class="logo">Trust<span>X</span></div></a></nav>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Browse Projects</a></li>
+                    <li><a href="/projectdetails">My Projects</a></li>
+                </ul>
+            </nav>
+            <div class="balance">
+                <span>Balance: ₹{{ user.balance }}</span>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
+{% block content %}
+<section class="withdraw-page">
+    <div class="container">
+        <h2>Withdraw Funds</h2>
+        <p>Current Balance: ₹{{ user.balance }}</p>
+        <form method="POST" action="{{ url_for('auth.withdraw') }}">
+            <div class="form-group">
+                <label for="amount">Amount (INR)</label>
+                <input type="number" id="amount" name="amount" min="1" step="0.01" required placeholder="Enter amount to withdraw">
+            </div>
+            <button type="submit" class="btn btn-primary">Withdraw</button>
+        </form>
+    </div>
+</section>
+
+<style>
+    .withdraw-page {
+        padding: 2rem 0;
+    }
+
+    .withdraw-page h2 {
+        font-size: 1.5rem;
+        color: var(--dark);
+        margin-bottom: 1.5rem;
+    }
+
+    .withdraw-page p {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--dark);
+        font-size: 0.9rem;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 0.6rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,155 @@
+{% extends "Home.html" %}
+<body>
+    
+    {% block content%}
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Secure Freelancing with Blockchain Technology</h1>
+                <p>TrustX provides a decentralized escrow system with AI-powered verification and an immutable rating system to protect both freelancers and clients.</p>
+                <a href="/signup" class="btn btn-primary">Find Talent</a>
+                <a href="/signup" class="btn btn-secondary">Offer Services</a>
+            </div>
+            <div class="hero-image">
+                <img src="/static/images/hero.svg" alt="TrustX Platform">
+            </div>
+        </div>
+    </section>
+    
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose TrustX?</h2>
+                <p>Our platform uses cutting-edge blockchain technology and AI to create a secure and transparent freelancing environment.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Escrow System</h3>
+                    <p>Smart contracts lock payments until work is delivered and approved, protecting both parties from fraud.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Profile Verification</h3>
+                    <p>Advanced AI models detect fake profiles and suspicious activity to keep the community trustworthy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Immutable Ratings</h3>
+                    <p>All ratings and reviews are stored on the blockchain, ensuring they can't be manipulated or deleted.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Transparent History</h3>
+                    <p>View verified work history and completed projects to make informed hiring decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Fair Dispute Resolution</h3>
+                    <p>Decentralized arbitration system ensures fair outcomes when disputes arise.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Lower Fees</h3>
+                    <p>Cutting out intermediaries means more money in freelancers' pockets and lower costs for clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>TrustX makes collaboration between freelancers and clients simple, secure, and transparent.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Connect Wallet</h3>
+                    <p>Link your cryptocurrency wallet to access our decentralized platform.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Verify Identity</h3>
+                    <p>Complete the AI-powered verification process to establish trust.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Create Project</h3>
+                    <p>Clients post projects or freelancers offer services with clear terms.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Secure Payment</h3>
+                    <p>Funds are locked in smart contracts until work is completed.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Rate & Review</h3>
+                    <p>Provide feedback that's permanently stored on the blockchain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Join the TrustX Community</h2>
+            <p>Sign up for our newsletter to stay updated on secure freelancing opportunities.</p>
+            <a href="/signup"><button class="btn btn-secondary" id="signupBtn">Sign up</button></a>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Trust<span>X</span></div>
+                    <p>TrustX is revolutionizing freelancing with blockchain technology, making it safer and more transparent for everyone involved.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="/static/images/icon-twitter.svg" alt="Twitter/X">
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="/static/images/icon-linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="/static/images/icon-instagram.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Platform</h3>
+                    <ul>
+                        <li><a href="#">Browse Projects</a></li>
+                        <li><a href="#">Find Freelancers</a></li>
+                        <li><a href="#">Post a Project</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    {% endblock%}

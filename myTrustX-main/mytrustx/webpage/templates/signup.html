@@ -1,0 +1,47 @@
+{% extends "Home.html" %}
+{% block content%}
+<br/><br/>
+<div class="signup-container">
+    <div class="signup-content">
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <button class="social-btn google-btn" id="googleSignInBtn">
+                <img src="https://cdn-icons-png.flaticon.com/256/2702/2702602.png" alt="Google"> Continue with Google
+            </button>
+            <button class="social-btn facebook-btn">
+                <img src="https://img.favpng.com/16/19/0/facebook-computer-icons-social-networking-service-login-png-favpng-1H6btyJz1LLwh8JAt19XR5rCe.jpg" alt="Facebook"> Continue with Facebook
+            </button>
+            <div class="separator">OR</div>
+            <form id="signupForm" method="post">
+                <div class="form-group name-group">
+                    <div class="name-field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+                    </div>
+                    <div class="name-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html" target="_blank">TrustX Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Join TrustX</button>
+            </form>
+            
+
+            <p class="toggle-text">Already have an account? <a href="/signin" id="switchToSignIn">Sign In</a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock%}
